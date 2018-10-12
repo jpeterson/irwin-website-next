@@ -22,8 +22,8 @@ const BlogPostTemplate = ({ data }) => {
         <div>
           Tags:
           <ul>
-            {tags.map(tag => (
-              <li>{tag.tag}</li>
+            {tags.map(({ tag }) => (
+              <li key={tag}>{tag}</li>
             ))}
           </ul>
         </div>
