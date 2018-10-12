@@ -5,12 +5,33 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'blog'
+  - name: 'posts'
+    label: 'Posts'
+    folder: 'content/posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { name: 'path', label: 'Path to Post' }
+      - { name: 'date', label: 'Date of Post', widget: 'date' }
+      - { name: 'title', label: 'Title of Post' }
+      - { name: 'body', label: 'Post Content', widget: 'markdown' }
+      - { name: 'author', label: 'Post Author' }
+      - name: 'tags'
+        label: 'Tags'
+        widget: 'list'
+        fields:
+          - {
+              label: 'Tag',
+              name: 'tag',
+              widget: 'relation',
+              collection: 'tags',
+              searchFields: ['name'],
+              valueField: 'name',
+            }
+
+  - name: 'tags'
+    label: 'Tags'
+    folder: 'content/tags'
     create: true
     fields:
-      - { name: 'path', label: 'Path' }
-      - { name: 'date', label: 'Date', widget: 'date' }
-      - { name: 'title', label: 'Title' }
-      - { name: 'body', label: 'Body', widget: 'markdown' }
+      - { name: 'name', label: 'Tag Name' }
