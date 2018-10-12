@@ -5,17 +5,28 @@ import Layout from '../components/layout';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
+  console.log(post);
+
+  const { title, author, date, tags } = post.frontmatter;
 
   return (
     <Layout>
       <div>
         <Link to="/blog">Back to All</Link>
         <hr />
-        <h1>{post.frontmatter.title}</h1>
+        <h1>{title}</h1>
         <h4>
-          Posted by {post.frontmatter.author} on {post.frontmatter.date}
+          Posted by {author} on {date}
         </h4>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div>
+          Tags:
+          <ul>
+            {tags.map(tag => (
+              <li>{tag.tag}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Layout>
   );
@@ -30,6 +41,9 @@ export const postQuery = graphql`
         title
         author
         date
+        tags {
+          tag
+        }
       }
     }
   }

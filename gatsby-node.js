@@ -21,10 +21,13 @@ exports.createPages = ({ graphql, actions }) => {
             html
             id
             frontmatter {
-              title
               path
-              date
+              title
               author
+              date
+              tags {
+                tag
+              }
             }
             excerpt
           }
