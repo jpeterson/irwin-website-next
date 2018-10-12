@@ -19,6 +19,15 @@ const Menu = () => (
         <Link to="/">Home</Link>
       </li>
       <li>
+        <Link to="/apps-layers">Apps & Layers</Link>
+      </li>
+      <li>
+        <Link to="/integration">Integration Services</Link>
+      </li>
+      <li>
+        <Link to="/community">Community</Link>
+      </li>
+      <li>
         <Link to="/about">About</Link>
       </li>
       <li>

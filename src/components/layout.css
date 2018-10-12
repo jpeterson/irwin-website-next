@@ -40,13 +40,12 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: #333;
-  text-decoration: none;
+  color: royalblue;
 }
 a:active,
 a:hover {
   outline-width: 0;
-  text-decoration: underline;
+  color: coral;
 }
 abbr[title] {
   border-bottom: none;
