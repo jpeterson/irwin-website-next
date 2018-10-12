@@ -1,4 +1,4 @@
 ---
-title: observer
+title: Observer
 ---
 
