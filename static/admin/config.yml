@@ -25,8 +25,8 @@ collections:
               name: 'tag',
               widget: 'relation',
               collection: 'tags',
-              searchFields: ['name'],
-              valueField: 'name',
+              searchFields: ['title'],
+              valueField: 'title',
             }
 
   - name: 'tags'
