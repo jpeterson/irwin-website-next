@@ -34,4 +34,4 @@ collections:
     folder: 'content/tags'
     create: true
     fields:
-      - { name: 'name', label: 'Tag Name' }
+      - { name: 'title', label: 'Tag Name' }
