@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 
@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data }) => {
 };
 
 export const postQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query PostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {

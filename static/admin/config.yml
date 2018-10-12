@@ -20,18 +20,17 @@ collections:
         label: 'Tags'
         widget: 'list'
         fields:
-          - {
-              label: 'Tag',
-              name: 'tag',
-              widget: 'relation',
-              collection: 'tags',
-              searchFields: ['title'],
-              valueField: 'title',
-            }
-
-  - name: 'tags'
-    label: 'Tags'
-    folder: 'content/tags'
-    create: true
-    fields:
-      - { name: 'title', label: 'Tag Name' }
+          - label: 'Tag'
+            name: 'tag'
+            required: false,
+            widget: 'select'
+            options:
+              [
+                'Incident API',
+                'Resource API',
+                'ADS',
+                'Observer',
+                'Lineup',
+                'Business Artifacts',
+                'Meetings',
+              ]

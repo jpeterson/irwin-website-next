@@ -10,9 +10,5 @@
 
   "rules": {
     "prettier/prettier": "error"
-  },
-
-  "globals": {
-    "graphql": false
   }
 }
