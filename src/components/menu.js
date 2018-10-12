@@ -16,22 +16,34 @@ const Menu = () => (
       }}
     >
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" activeClassName="active">
+          Home
+        </Link>
       </li>
       <li>
-        <Link to="/apps-layers">Apps & Layers</Link>
+        <Link to="/apps-layers" activeClassName="active">
+          Apps & Layers
+        </Link>
       </li>
       <li>
-        <Link to="/integration">Integration Services</Link>
+        <Link to="/integration" activeClassName="active">
+          Integration Services
+        </Link>
       </li>
       <li>
-        <Link to="/community">Community</Link>
+        <Link to="/community" activeClassName="active">
+          Community
+        </Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about" activeClassName="active">
+          About
+        </Link>
       </li>
       <li>
-        <Link to="/blog">Blog</Link>
+        <Link to="/blog" activeClassName="active">
+          Blog
+        </Link>
       </li>
     </ul>
   </div>

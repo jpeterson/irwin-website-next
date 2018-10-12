@@ -47,6 +47,9 @@ a:hover {
   outline-width: 0;
   color: coral;
 }
+a.active {
+  color: deeppink;
+}
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
