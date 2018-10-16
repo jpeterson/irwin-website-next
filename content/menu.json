@@ -1,0 +1,66 @@
+{
+  "pages": [
+    {
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "name": "Apps & Layers",
+      "path": "/apps-layers",
+      "subpages": [
+        {
+          "name": "Observer",
+          "path": "/apps-layers/observer"
+        },
+        {
+          "name": "Lineup",
+          "path": "/apps-layers/lineup"
+        },
+        {
+          "name": "Layers",
+          "path": "/apps-layers/layers"
+        }
+      ]
+    },
+    {
+      "name": "Integration Services",
+      "path": "/integration",
+      "subpages": [
+        {
+          "name": "Incident API",
+          "path": "/integration/incident-api"
+        },
+        {
+          "name": "Resource API",
+          "path": "/integration/resource-api"
+        },
+        {
+          "name": "ADS",
+          "path": "/integration/ads"
+        }
+      ]
+    },
+    {
+      "name": "Community",
+      "path": "/community",
+      "subpages": [
+        {
+          "name": "Teams",
+          "path": "/community/teams"
+        },
+        {
+          "name": "Resources",
+          "path": "/community/resources"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "path": "/blog"
+    },
+    {
+      "name": "About",
+      "path": "/about"
+    }
+  ]
+}
