@@ -6,7 +6,7 @@ import ContentWrapper from '../components/ContentWrapper';
 import HomepageHeading from '../components/HomepageHero';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout hasHero>
     <HomepageHeading />
     <ContentWrapper>
       <Segment>

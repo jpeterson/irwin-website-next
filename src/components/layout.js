@@ -9,11 +9,12 @@ import { StaticQuery, graphql } from 'gatsby';
 import Header from './Header';
 import Footer from './Footer';
 import Menu from './SiteNav';
+import ContentWrapper from './ContentWrapper';
 
 import './layout.css';
 import 'semantic-ui-less/semantic.less';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, hasHero }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -26,18 +27,15 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' }
-          ]}
-        >
+        <Helmet>
           <html lang="en" />
+          <title>{data.site.siteMetadata.title}</title>
+          <meta name="description" content="Helmet application" />
+          <meta name="keywords" content="helmet, application" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Menu />
-        <div style={{}}>{children}</div>
+        {hasHero ? children : <ContentWrapper>{children}</ContentWrapper>}
         <Footer />
       </>
     )}
