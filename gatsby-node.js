@@ -8,6 +8,9 @@
 
 const path = require('path');
 
+/**
+ * Generate Blog Posts
+ */
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -45,5 +48,18 @@ exports.createPages = ({ graphql, actions }) => {
         component: postTemplate
       });
     });
+  });
+};
+
+/**
+ * Theme Semantic UI
+ */
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        '../../theme.config$': path.join(__dirname, 'src/semantic/theme.config')
+      }
+    }
   });
 };

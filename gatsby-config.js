@@ -8,6 +8,7 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-transformer-remark',
     'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-less',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

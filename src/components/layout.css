@@ -1,9 +1,13 @@
+@import '../fonts/fonts.css';
+
 html {
-  font-family: sans-serif;
+  font-family: 'Avenir Next', sans-serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
+  font-family: 'Avenir Next', sans-serif !important;
+
   margin: 0;
 }
 article,
