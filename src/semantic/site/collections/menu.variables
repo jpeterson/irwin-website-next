@@ -376,7 +376,7 @@
 ---------------*/
 
 /* Inverted */
-@invertedBackground: @black;
+@invertedBackground: @irwinBlue;
 @invertedBoxShadow: none;
 @invertedBorder: 0px solid transparent;
 @invertedHeaderBackground: transparent;

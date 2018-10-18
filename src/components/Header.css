@@ -1,0 +1,25 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  z-index: 2;
+}
+
+.site-header-scrolled {
+  position: fixed;
+  background: rgba(43, 77, 128, 1);
+  box-shadow: 0px 0px 10px 5px rgba(20, 20, 20, 0.06);
+}
+
+.site-header img {
+  height: 40px;
+}
+
+.site-header-scrolled img {
+  height: 30px;
+}

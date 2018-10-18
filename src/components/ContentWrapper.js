@@ -5,7 +5,8 @@ const ContentWrapper = ({ children }) => (
     style={{
       margin: '0 auto',
       maxWidth: 1140,
-      padding: '1.5rem'
+      padding: '1.5rem',
+      paddingTop: '105px'
     }}
   >
     {children}

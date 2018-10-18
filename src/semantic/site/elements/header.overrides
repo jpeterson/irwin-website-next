@@ -2,3 +2,5 @@
          Theme Overrides
 *******************************/
 
+@fontWeight: normal;
+@subHeadingFontWeight: normal;

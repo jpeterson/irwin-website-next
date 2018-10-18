@@ -6,6 +6,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  height: auto !important;
   margin: 0;
 }
 article,
@@ -223,7 +224,6 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 h1 {
   margin-left: 0;

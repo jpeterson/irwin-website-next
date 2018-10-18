@@ -61,7 +61,7 @@
   Page Heading
 ---------------*/
 
-@headerFontWeight : @bold;
+@headerFontWeight : @normal;
 @headerLineHeight : unit((18 / 14), em);
 
 @h1 : unit((28 / 14), rem);
@@ -219,6 +219,9 @@
       Site Colors
 --------------------*/
 
+/*---  IRWIN Brand Colors  ---*/
+@irwinBlue       : #2b4d80;
+
 /*---  Colors  ---*/
 @red              : #DB2828;
 @orange           : #F2711C;
@@ -226,7 +229,7 @@
 @olive            : #B5CC18;
 @green            : #21BA45;
 @teal             : #00B5AD;
-@blue             : #2185D0;
+@blue             : @irwinBlue;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;

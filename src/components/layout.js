@@ -8,11 +8,13 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './Header';
 import Footer from './Footer';
-import Menu from './SiteNav';
+// import SiteNav from './SiteNav';
 import ContentWrapper from './ContentWrapper';
 
-import './layout.css';
+import favicon from '../images/favicon.png';
+
 import 'semantic-ui-less/semantic.less';
+import './layout.css';
 
 const Layout = ({ children, hasHero }) => (
   <StaticQuery
@@ -32,9 +34,10 @@ const Layout = ({ children, hasHero }) => (
           <title>{data.site.siteMetadata.title}</title>
           <meta name="description" content="Helmet application" />
           <meta name="keywords" content="helmet, application" />
+          <link rel="shortcut icon" type="image/png" href={favicon} />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Menu />
+        <Header hasHero={hasHero} siteTitle={data.site.siteMetadata.title} />
+        {/* <SiteNav /> */}
         {hasHero ? children : <ContentWrapper>{children}</ContentWrapper>}
         <Footer />
       </>

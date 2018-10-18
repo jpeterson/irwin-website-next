@@ -10,7 +10,7 @@ const ForwardedLink = React.forwardRef((props, ref) => (
   <Link {...props} innerRef={ref} />
 ));
 
-const SiteNav = () => {
+const SiteNav = ({ hasHero, scrolled }) => {
   const getMenuItems = () => {
     return pages.map(page => {
       let subnav = getSubMenuItems(page.subpages);
@@ -24,10 +24,12 @@ const SiteNav = () => {
             as={ForwardedLink}
             to={page.path}
             activeClassName="active-nav"
-            item
             icon="dropdown"
             className="site-nav-dropdown"
+            item
             simple
+            floating
+            pointing
           >
             {subnav}
           </Dropdown>
@@ -67,7 +69,11 @@ const SiteNav = () => {
   };
 
   return (
-    <Menu inverted className="site-nav-container" size="massive">
+    <Menu
+      inverted
+      className="site-nav-container"
+      size={scrolled || !hasHero ? 'small' : null}
+    >
       {getMenuItems()}
     </Menu>
   );
