@@ -8,27 +8,24 @@ import {
   Header,
   Image,
   List,
-  Segment
+  Segment,
+  Sticky
 } from 'semantic-ui-react';
 
-import logo from '../images/logo-white.png';
+import logo from '../images/logo-white.svg';
 import './Footer.css';
 
 const FooterLink = props => <Link {...props} className="footer-link" />;
 
 const Footer = ({ siteTitle }) => (
-  <Segment
-    inverted
-    vertical
-    style={{ padding: '5em 0em', background: '#2b4d80' }}
-  >
+  <Segment inverted vertical className="footer-container">
     <Container>
       <Grid divided inverted stackable>
         <Grid.Row>
           <Grid.Column width={4} verticalAlign="middle" textAlign="center">
-            <Image as={Link} to="/" src={logo} size="medium" />
-            <Divider />
-            <p>DOI Boise NIFC</p>
+            <Image as={Link} to="/" src={logo} size="small" />
+            <Divider inverted />
+            <p>2018 DOI</p>
           </Grid.Column>
           <Grid.Column width={3}>
             <Header inverted as="h4">
@@ -93,6 +90,22 @@ const Footer = ({ siteTitle }) => (
               re-engage users.
             </p>
             */}
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column>
+            <p style={{ textAlign: 'center' }}>
+              IRWIN is governed by the{' '}
+              <a
+                href="https://www.forestsandrangelands.gov/WFIT/governance/index.shtml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
+                Wildland Fire Information and Technology governance structure
+              </a>
+              .
+            </p>
           </Grid.Column>
         </Grid.Row>
       </Grid>

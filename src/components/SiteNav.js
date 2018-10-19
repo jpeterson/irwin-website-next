@@ -65,7 +65,9 @@ const SiteNav = ({ hasHero, scrolled }) => {
       );
     });
 
-    return <Dropdown.Menu>{subpages}</Dropdown.Menu>;
+    return (
+      <Dropdown.Menu className="site-nav-sub-menu">{subpages}</Dropdown.Menu>
+    );
   };
 
   return (

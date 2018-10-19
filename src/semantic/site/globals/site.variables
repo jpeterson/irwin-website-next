@@ -220,17 +220,26 @@
 --------------------*/
 
 /*---  IRWIN Brand Colors  ---*/
-@irwinBlue       : #2b4d80;
+@irwinRed         : #f41e30;
+@irwinBlue        : #2b4d80;
+@irwinGreen       : #0e8f49;
+@irwinTeal        : #099194;
+
+@irwinLightGreen  : #8dc63f;
+@irwinLightBlue   : #4fa7dd;
+@irwinLightTeal   : #51c2b8;
+@irwinDarkTeal    : #0c5159;
+
 
 /*---  Colors  ---*/
-@red              : #DB2828;
+@red              : @irwinRed;
 @orange           : #F2711C;
 @yellow           : #FBBD08;
-@olive            : #B5CC18;
-@green            : #21BA45;
-@teal             : #00B5AD;
+@olive            : @irwinLightGreen;
+@green            : @irwinGreen;
+@teal             : @irwinTeal;
 @blue             : @irwinBlue;
-@violet           : #6435C9;
+@violet           : @irwinLightBlue;
 @purple           : #A333C8;
 @pink             : #E03997;
 @brown            : #A5673F;
