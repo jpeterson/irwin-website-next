@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { Dropdown, Menu } from 'semantic-ui-react';
 
 import { pages } from '../../content/menu.json';
-import './siteNav.css';
+import './SiteNav.css';
 
 // Workaround for using semantic-ui-react Dropdown as Gatsby Link
 const ForwardedLink = React.forwardRef((props, ref) => (

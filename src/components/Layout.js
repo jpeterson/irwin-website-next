@@ -14,7 +14,7 @@ import ContentWrapper from './ContentWrapper';
 import favicon from '../images/favicon.png';
 
 import 'semantic-ui-less/semantic.less';
-import './layout.css';
+import './Layout.css';
 
 const Layout = ({ children, hasHero }) => (
   <StaticQuery
