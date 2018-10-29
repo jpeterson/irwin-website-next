@@ -1,15 +1,19 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Container, Header, Icon } from 'semantic-ui-react';
 
 import Layout from '../../components/Layout';
+import Breadcrumb from '../../components/Breadcrumb';
 
 const headerIconColor = 'teal';
 
 const AdsPage = () => {
   return (
     <Layout>
-      <Link to="/integration">Back to Integration Services</Link>
+      <Breadcrumb
+        page="ADS"
+        parent={{ name: 'Integration Services', path: '/integration' }}
+      />
+
       <Container text textAlign="justified">
         <Header as="h1" icon textAlign="center">
           <Icon name="info" color={headerIconColor} circular />

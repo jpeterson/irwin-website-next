@@ -10,13 +10,14 @@ import Header from './Header';
 import Footer from './Footer';
 // import SiteNav from './SiteNav';
 import ContentWrapper from './ContentWrapper';
+import SubNav from './SubNav';
 
 import favicon from '../images/favicon.png';
 
 import 'semantic-ui-less/semantic.less';
 import './Layout.css';
 
-const Layout = ({ children, hasHero }) => (
+const Layout = ({ children, hasHero, subNav }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -37,7 +38,7 @@ const Layout = ({ children, hasHero }) => (
           <link rel="shortcut icon" type="image/png" href={favicon} />
         </Helmet>
         <Header hasHero={hasHero} siteTitle={data.site.siteMetadata.title} />
-        {/* <SiteNav /> */}
+        {subNav ? <SubNav page={subNav} /> : null}
         {hasHero ? children : <ContentWrapper>{children}</ContentWrapper>}
         <Footer />
       </>

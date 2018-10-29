@@ -1,15 +1,28 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Container, Header, Icon } from 'semantic-ui-react';
 
 import Layout from '../../components/Layout';
+import Breadcrumb from '../../components/Breadcrumb';
 import PostsByTag from '../../components/PostsByTag';
+
+const headerIconColor = 'teal';
 
 const ObserverPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(edge => edge.node);
 
   return (
     <Layout>
-      <div>Observer homepage</div>
+      <Breadcrumb
+        page="Observer"
+        parent={{ name: 'Apps & Layers', path: '/apps-layers' }}
+      />
+      <Container text textAlign="justified">
+        <Header as="h1" icon textAlign="center">
+          <Icon name="info" color={headerIconColor} circular />
+          <Header.Content>IRWIN Observer</Header.Content>
+        </Header>
+      </Container>
       <hr />
       <div>
         <h4>See the latest Observer posts:</h4>
