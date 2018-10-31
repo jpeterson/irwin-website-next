@@ -4,6 +4,10 @@ import { graphql, Link } from 'gatsby';
 const PostsByTag = ({ tag, posts }) => {
   console.log({ tag, posts });
 
+  if (!posts || !posts.length) {
+    return 'No articles found.';
+  }
+
   return (
     <div style={{ border: '1px solid #efefef', padding: '20px' }}>
       <ul>
