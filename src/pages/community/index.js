@@ -7,10 +7,9 @@ const CommunityPage = () => {
   return (
     <Layout>
       <div>
-        IRWIN is a community.
         <ul>
           <li>
-            <Link to="/community/teams">The IRWIN Community Teams</Link>
+            <Link to="/community/teams">Teams</Link>
           </li>
           <li>
             <Link to="/community/resources">Community Resources</Link>

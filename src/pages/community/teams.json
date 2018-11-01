@@ -2,7 +2,7 @@
   {
     "id": 0,
     "organization": "Federal",
-    "name": "Alaska Federal CAD (FireBeans)",
+    "name": "Alaska Federal CAD",
     "category": "Read/Write",
     "status": "V5 API Production",
     "test": true,
@@ -10,12 +10,15 @@
     "prod": true,
     "role": "IRWINCAD",
     "systemName": "firebeans",
-    "technicalPoc": "Gary Schmuck gschmunk@blm.gov"
+    "technicalPoc": {
+      "name": "Gary Schmuck",
+      "email": "gschmunk@blm.gov"
+    }
   },
   {
     "id": 1,
     "organization": "State",
-    "name": "Alaska State CAD (IFM)",
+    "name": "Alaska State CAD",
     "category": "Read/Write",
     "status": "V5 API Production",
     "test": true,
@@ -23,20 +26,26 @@
     "prod": true,
     "role": "IRWINCAD",
     "systemName": "ifm",
-    "technicalPoc": "Kim Anderson (kanderson@selkirksystems.com)"
+    "technicalPoc": {
+      "name": "Kim Anderson",
+      "email": "kanderson@selkirksystems.com"
+    }
   },
   {
     "id": 2,
     "organization": "State",
-    "name": "CalFire (cajbr)",
+    "name": "CalFire (cajibr)",
     "category": "Read",
     "status": "V5 API Production",
     "test": true,
     "oat": true,
     "prod": true,
     "role": "IRWINREAD",
-    "systemName": "cijbr",
-    "technicalPoc": "Marc Reitzel"
+    "systemName": "cajibr",
+    "technicalPoc": {
+      "name": "Marc Reitzel",
+      "email": "marc.reitzell@fire.ca.gov"
+    }
   },
   {
     "id": 3,
@@ -49,7 +58,10 @@
     "prod": false,
     "role": "IRWINCAD",
     "systemName": "cfcad",
-    "technicalPoc": "Tim Bozarth (retired) ; Matsueda, Robert@CALFIRE"
+    "technicalPoc": {
+      "name": "Robert Matsueda",
+      "email": "robert.matsueda@fire.ca.gov"
+    }
   },
   {
     "id": 4,
@@ -62,12 +74,15 @@
     "prod": false,
     "role": "IRWINREAD",
     "systemName": "iteam",
-    "technicalPoc": "Jim Edmonds - ITeam Programmer R6"
+    "technicalPoc": {
+      "name": "Jim Edmonds",
+      "email": "jredmonds@fs.fed.us"
+    }
   },
   {
     "id": 5,
     "organization": "Federal",
-    "name": "EGP Enterprise Geospatial Portal",
+    "name": "EGP (Enterprise Geospatial Portal)",
     "category": "Read",
     "status": "Moving to Services",
     "test": true,
@@ -75,12 +90,15 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "egp",
-    "technicalPoc": "Brian Collins (brian.collins@intterragroup.com"
+    "technicalPoc": {
+      "name": "Brian Collins",
+      "email": "brian.collins@intterragroup.com"
+    }
   },
   {
     "id": 6,
     "organization": "Federal",
-    "name": "eISuite",
+    "name": "e-ISuite",
     "category": "Read (premium)",
     "status": "V5 API Production",
     "test": true,
@@ -88,12 +106,15 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "eisuite",
-    "technicalPoc": "Tate, Donna L -FS <dltate@fs.fed.us>"
+    "technicalPoc": {
+      "name": "Donna Tate",
+      "email": "dltate@fs.fed.us"
+    }
   },
   {
     "id": 7,
     "organization": "State",
-    "name": "Emergency Reporting (Wyoming, North Dakota)",
+    "name": "Emergency Reporting (WY, ND)",
     "category": "Read/Write",
     "status": "V5 API Production",
     "test": true,
@@ -101,7 +122,10 @@
     "prod": true,
     "role": "IRWINREADWRITE",
     "systemName": "ERS",
-    "technicalPoc": "leigh.woody@emergencyreporting.com;"
+    "technicalPoc": {
+      "name": "Leigh Woody",
+      "email": "leigh.woody@emergencyreporting.com"
+    }
   },
   {
     "id": 8,
@@ -114,7 +138,10 @@
     "prod": true,
     "role": "IRWINFIRECODE",
     "systemName": "firecode",
-    "technicalPoc": "Michael D. Coon <MichaelC@dsoft-tech.com"
+    "technicalPoc": {
+      "name": "Michael D. Coon",
+      "email": "MichaelC@dsoft-tech.com"
+    }
   },
   {
     "id": 9,
@@ -127,33 +154,10 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "firestat",
-    "technicalPoc": "Neil Shrauf"
-  },
-  {
-    "id": 10,
-    "organization": "Vendor",
-    "name": "FireWhat",
-    "category": "Read",
-    "status": "V4 Geoplatform CWF",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": "Nathan Johnston nathan@firewhat.com"
-  },
-  {
-    "id": 11,
-    "organization": "Federal",
-    "name": "Flight",
-    "category": "Read",
-    "status": "Moving to Services",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": "Michael D. Coon <MichaelC@dsoft-tech.com"
+    "technicalPoc": {
+      "name": "Neil Shrauf",
+      "email": "Neal.Schrauf@Criterion-sys.com"
+    }
   },
   {
     "id": 12,
@@ -166,7 +170,10 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "geomac",
-    "technicalPoc": "Jodi Riegle jlriegle@usgs.gov,"
+    "technicalPoc": {
+      "name": "Jodi Riegle",
+      "email": "jlriegle@usgs.gov"
+    }
   },
   {
     "id": 13,
@@ -179,12 +186,15 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "gbccfiredata",
-    "technicalPoc": "Ryan Tippetts rtippetts@blm.gov,"
+    "technicalPoc": {
+      "name": "Ryan Tippetts",
+      "email": "rtippetts@blm.gov"
+    }
   },
   {
     "id": 14,
     "organization": "Federal",
-    "name": "GTAC (was RSAC)",
+    "name": "GTAC",
     "category": "Read",
     "status": "Moving to Services",
     "test": true,
@@ -192,20 +202,10 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "rsac",
-    "technicalPoc": "Lecker, Jennifer -FS <jlecker@fs.fed.us>"
-  },
-  {
-    "id": 15,
-    "organization": "IRWINCore",
-    "name": "ICS Situation Report",
-    "category": "Read",
-    "status": "Request",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": "Daniel McCullough <Daniel.McCullough@Criterion-sys"
+    "technicalPoc": {
+      "name": "Jennifer Lecker",
+      "email": "jlecker@fs.fed.us"
+    }
   },
   {
     "id": 16,
@@ -218,7 +218,10 @@
     "prod": true,
     "role": "IRWINREADWRITE",
     "systemName": "ics209",
-    "technicalPoc": "Neal Schrauf <Neal.Schrauf@Criterion-sys.com>"
+    "technicalPoc": {
+      "name": "Neal Schrauf",
+      "email": "Neal.Schrauf@Criterion-sys.com"
+    }
   },
   {
     "id": 17,
@@ -231,7 +234,10 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "iftdss",
-    "technicalPoc": "Andrew Bailey; Geta Popa popa@us.ibm.com"
+    "technicalPoc": {
+      "name": "Andrew Bailey",
+      "email": "andrew_bailey@nps.gov"
+    }
   },
   {
     "id": 18,
@@ -244,7 +250,10 @@
     "prod": false,
     "role": "IRWINREADWRITE",
     "systemName": "inform_inspector",
-    "technicalPoc": "Ariel Low <alow@esri.com>"
+    "technicalPoc": {
+      "name": "Ariel Low",
+      "email": "alow@esri.com"
+    }
   },
   {
     "id": 19,
@@ -257,7 +266,10 @@
     "prod": false,
     "role": "IRWINREADWRITE",
     "systemName": "inform_mobile",
-    "technicalPoc": "Ariel Low <alow@esri.com>"
+    "technicalPoc": {
+      "name": "Ariel Low",
+      "email": "alow@esri.com"
+    }
   },
   {
     "id": 20,
@@ -270,7 +282,10 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "interra",
-    "technicalPoc": "Brian Collins Interra"
+    "technicalPoc": {
+      "name": "Brian Collins",
+      "email": "brian.collins@intterragroup.com"
+    }
   },
   {
     "id": 21,
@@ -283,12 +298,15 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "iqcs",
-    "technicalPoc": "john jacobsen jjacobsen@blm.gov"
+    "technicalPoc": {
+      "name": "John Jacobsen",
+      "email": "jjacobsen@blm.gov"
+    }
   },
   {
     "id": 22,
     "organization": "State",
-    "name": "IQS (NASF Incident Qualification System)",
+    "name": "IQS",
     "category": "Read/Write",
     "status": "Discovery",
     "test": true,
@@ -296,7 +314,10 @@
     "prod": false,
     "role": "IRWINREADWRITE",
     "systemName": "iqs",
-    "technicalPoc": "James Mortland , Tani Converse"
+    "technicalPoc": {
+      "name": "James Mortland",
+      "email": "james.mortland@saic.com"
+    }
   },
   {
     "id": 23,
@@ -309,25 +330,15 @@
     "prod": false,
     "role": "IRWINREADWRITE",
     "systemName": "iroc",
-    "technicalPoc": "Craig Amundson  craig.amundson@caskllc.com"
-  },
-  {
-    "id": 24,
-    "organization": "IRWINCore",
-    "name": "IRWIN Onboarding Team",
-    "category": "Read/Write",
-    "status": "",
-    "test": true,
-    "oat": true,
-    "prod": false,
-    "role": "IRWINCAD",
-    "systemName": "IRWINIMP",
-    "technicalPoc": "Rob Waller rwaller@saic.com"
+    "technicalPoc": {
+      "name": "Craig Amundson",
+      "email": "craig.amundson@caskllc.com"
+    }
   },
   {
     "id": 25,
     "organization": "County",
-    "name": "Los Angeles County - LACOCAD",
+    "name": "Los Angeles County",
     "category": "Read/Write",
     "status": "V5 API Production",
     "test": true,
@@ -335,7 +346,10 @@
     "prod": true,
     "role": "IRWINCAD",
     "systemName": "lacocad",
-    "technicalPoc": "vic.mesrobian@fire.lacounty.gov"
+    "technicalPoc": {
+      "name": "Leo Parsamyan",
+      "email": "Leo.Parsamyan@fire.lacounty.gov"
+    }
   },
   {
     "id": 26,
@@ -348,20 +362,10 @@
     "prod": false,
     "role": "IRWINREADWRITE",
     "systemName": "mefs",
-    "technicalPoc": "Nate Schweigert nschweigert@imagetrend.com"
-  },
-  {
-    "id": 27,
-    "organization": "Federal",
-    "name": "NIFC ArcGIS Online  (includes item National Incident Feature Service)",
-    "category": "Read/Write",
-    "status": "Request",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": ""
+    "technicalPoc": {
+      "name": "Nate Schweigert",
+      "email": "nschweigert@imagetrend.com"
+    }
   },
   {
     "id": 28,
@@ -374,25 +378,15 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "nwspih",
-    "technicalPoc": "jeremy.schulz@noaa.gov"
-  },
-  {
-    "id": 29,
-    "organization": "State",
-    "name": "North Dakota - Emergency Reporting (see also ticket #38)",
-    "category": "Read/Write",
-    "status": "Discovery",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "IRWINREADWRITE",
-    "systemName": "",
-    "technicalPoc": "trey@emergencyreporting.com Trey Carpenter"
+    "technicalPoc": {
+      "name": "Jeremy Schulz",
+      "email": "jeremy.schulz@noaa.gov"
+    }
   },
   {
     "id": 30,
     "organization": "County",
-    "name": "Orange County Fire Authority (OCFACAD)",
+    "name": "Orange County Fire Authority",
     "category": "Read/Write",
     "status": "Development",
     "test": false,
@@ -400,33 +394,10 @@
     "prod": false,
     "role": "IRWINCAD",
     "systemName": "ocfacad",
-    "technicalPoc": "Todd Muilenburg"
-  },
-  {
-    "id": 31,
-    "organization": "Vendor",
-    "name": "Pacific Gas and Electric",
-    "category": "Read",
-    "status": "V5 CWF Service Prod",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": "Sam Lanier"
-  },
-  {
-    "id": 32,
-    "organization": "Vendor",
-    "name": "RedZone",
-    "category": "Read",
-    "status": "V5 CWF Service Prod",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": "Craig Colquitt ccolquitt@redzone.co; efurbeyre@red"
+    "technicalPoc": {
+      "name": "Todd Muilenburg",
+      "email": "toddmuilenburg@ocfa.org"
+    }
   },
   {
     "id": 33,
@@ -439,20 +410,10 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "ROSS",
-    "technicalPoc": "Julie Olson, Phacil jolson@phacil.com"
-  },
-  {
-    "id": 34,
-    "organization": "Vendor",
-    "name": "Skyward",
-    "category": "Read",
-    "status": "V5 CWF Service Prod",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": "Shane Williams <shane.williams@skyward.io"
+    "technicalPoc": {
+      "name": "Julie Olson",
+      "email": "jolson@phacil.com"
+    }
   },
   {
     "id": 35,
@@ -465,7 +426,10 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "smartfire",
-    "technicalPoc": "Sim Larken larkin@fs.fed.us,"
+    "technicalPoc": {
+      "name": "Sim Larken",
+      "email": "larkin@fs.fed.us"
+    }
   },
   {
     "id": 36,
@@ -478,12 +442,15 @@
     "prod": false,
     "role": "IRWINREAD",
     "systemName": "tfsgis",
-    "technicalPoc": "Curt Stripling cstripling@tfs.tamu.edu"
+    "technicalPoc": {
+      "name": "Curt Stripling",
+      "email": "cstripling@tfs.tamu.edu"
+    }
   },
   {
     "id": 37,
     "organization": "State",
-    "name": "Texas FS WIRES (fiResponse implementation)",
+    "name": "Texas FS - WIRES",
     "category": "Read/Write",
     "status": "V5 API Production",
     "test": true,
@@ -491,7 +458,10 @@
     "prod": true,
     "role": "IRWINCAD",
     "systemName": "WIRES",
-    "technicalPoc": "dhannemann@tfs.tamu.edu"
+    "technicalPoc": {
+      "name": "Don Hannemann",
+      "email": "dhannemann@tfs.tamu.edu"
+    }
   },
   {
     "id": 38,
@@ -504,7 +474,10 @@
     "prod": true,
     "role": "IRWINREAD",
     "systemName": "sou",
-    "technicalPoc": "Ben Huntsman bhuntsman@utah.gov"
+    "technicalPoc": {
+      "name": "Ben Huntsman",
+      "email": "bhuntsman@utah.gov"
+    }
   },
   {
     "id": 39,
@@ -517,25 +490,15 @@
     "prod": true,
     "role": "IRWINREADWRITE",
     "systemName": "wfdss",
-    "technicalPoc": "Kishor Parmar parmar@excel-technologies.com"
-  },
-  {
-    "id": 40,
-    "organization": "Research",
-    "name": "WFIPs",
-    "category": "Read",
-    "status": "Initial Contact",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": "Mark Finney mfinney@fs.fed.us"
+    "technicalPoc": {
+      "name": "Kishor Parmar",
+      "email": "parmar@excel-technologies.com"
+    }
   },
   {
     "id": 41,
     "organization": "Vendor",
-    "name": "Wildcad",
+    "name": "WildCAD",
     "category": "Read/Write",
     "status": "V5 API Production",
     "test": true,
@@ -543,32 +506,9 @@
     "prod": true,
     "role": "IRWINCAD",
     "systemName": "wildcad",
-    "technicalPoc": "Brian Booher"
-  },
-  {
-    "id": 42,
-    "organization": "IRWINCore",
-    "name": "Wisconsin",
-    "category": "Read/Write",
-    "status": "Request",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": "jamesd.barnier@wisconsin.gov"
-  },
-  {
-    "id": 43,
-    "organization": "State",
-    "name": "Wisconsin",
-    "category": "",
-    "status": "Request",
-    "test": false,
-    "oat": false,
-    "prod": false,
-    "role": "",
-    "systemName": "",
-    "technicalPoc": "jamesd.barnier@wisconsin.gov"
+    "technicalPoc": {
+      "name": "Brian Booher",
+      "email": "bbooher@bighorn.info"
+    }
   }
 ]

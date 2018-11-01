@@ -1,7 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../../components/Layout';
+import { Header } from 'semantic-ui-react';
 
+import Layout from '../../components/Layout';
 import Breadcrumb from '../../components/Breadcrumb';
 import TeamList from '../../components/TeamList';
 import PostsByTag from '../../components/PostsByTag';
@@ -19,6 +20,10 @@ const CommunityTeamsPage = ({ data }) => {
         page="Teams"
         parent={{ name: 'Community', path: '/community' }}
       />
+      <Header as="h1">Core Team</Header>
+      <div>placeholder for core team members</div>
+
+      <Header as="h1">Extended Teams</Header>
       <TeamList teams={teams} />
 
       {/* Relevant articles */}

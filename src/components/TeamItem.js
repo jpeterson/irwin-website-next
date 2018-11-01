@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Label } from 'semantic-ui-react';
+import { Card, Icon, Label } from 'semantic-ui-react';
 
 function TeamItem({ team }) {
   const getEnvLabels = team => {
@@ -29,7 +29,12 @@ function TeamItem({ team }) {
       );
     }
 
-    if (!labels.length) return <span>no environments</span>;
+    if (!labels.length)
+      return (
+        <span style={{ fontStyle: 'italic' }}>
+          No access to IRWIN environments.
+        </span>
+      );
 
     return (
       <>
@@ -38,12 +43,30 @@ function TeamItem({ team }) {
     );
   };
 
+  const getPocEmail = poc => {
+    if (!poc.email) return null;
+
+    return (
+      <a href={`mailto:${team.technicalPoc.email}`}>
+        <Icon name="mail" size="small" /> {team.technicalPoc.email}
+      </a>
+    );
+  };
+
+  const getRoleLabels = team => {
+    return <Label size="mini">{team.category}</Label>;
+  };
+
   return (
     <Card>
       <Card.Content>
         <Card.Header>{team.name}</Card.Header>
         <Card.Meta>{team.systemName}</Card.Meta>
-        <Card.Description>{team.technicalPoc}</Card.Description>
+        <Card.Description>
+          {team.technicalPoc.name}
+          <p>{getPocEmail(team.technicalPoc)}</p>
+          <p>{getRoleLabels(team)}</p>
+        </Card.Description>
       </Card.Content>
       <Card.Content extra>{getEnvLabels(team)}</Card.Content>
     </Card>
