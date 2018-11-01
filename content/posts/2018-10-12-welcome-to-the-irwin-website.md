@@ -5,6 +5,11 @@ title: Welcome to the IRWIN Website!
 author: Josh Peterson
 tags:
   - tag: Website
+  - tag: Incident API
+  - tag: Resource API
+  - tag: ADS
+  - tag: Business Artifacts
+  - tag: Meetings
 ---
 
-The IRWIN Website is a place for the IRWIN community to collaborate.
+The IRWIN Website is a place for the IRWIN community to learn, collaborate, and stay informed.
