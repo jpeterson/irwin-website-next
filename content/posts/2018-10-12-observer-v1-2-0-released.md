@@ -4,7 +4,6 @@ date: 2018-10-12T19:30:33.676Z
 title: Observer v1.2.0 Released
 author: Josh Peterson
 tags:
-  - tag: ADS
   - tag: Observer
 ---
 
