@@ -35,6 +35,7 @@ const Layout = ({ children, hasHero, subNav }) => (
           <title>{data.site.siteMetadata.title}</title>
           <meta name="description" content="Helmet application" />
           <meta name="keywords" content="helmet, application" />
+          <meta name="robots" content="noindex" />
           <link rel="shortcut icon" type="image/png" href={favicon} />
         </Helmet>
         <Header hasHero={hasHero} siteTitle={data.site.siteMetadata.title} />
