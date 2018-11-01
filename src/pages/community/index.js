@@ -10,10 +10,10 @@ const CommunityPage = () => {
         IRWIN is a community.
         <ul>
           <li>
-            <Link to="/community/teams">Who are we?</Link>
+            <Link to="/community/teams">The IRWIN Community Teams</Link>
           </li>
           <li>
-            <Link to="/community/resources">Resources</Link>
+            <Link to="/community/resources">Community Resources</Link>
           </li>
         </ul>
       </div>

@@ -37,6 +37,10 @@
         {
           "name": "ADS",
           "path": "/integration/ads"
+        },
+        {
+          "name": "Environments",
+          "path": "/integration/environments"
         }
       ]
     },

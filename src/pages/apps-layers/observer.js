@@ -9,7 +9,9 @@ import PostsByTag from '../../components/PostsByTag';
 const headerIconColor = 'violet';
 
 const ObserverPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges.map(edge => edge.node);
+  const posts =
+    data.allMarkdownRemark &&
+    data.allMarkdownRemark.edges.map(edge => edge.node);
 
   return (
     <Layout>
@@ -97,10 +99,10 @@ const ObserverPage = ({ data }) => {
             <li>When prompted, choose to sign in using ArcGIS.</li>
             <li>
               Request access to Observer by navigating to the group with the
-              following URL, and clicking “Join This Group” (see Figure 3).
-              NOTE: Observer should be accessible within 24 – 48 hours from the
-              time of your request. You will not be notified, so will need to
-              periodically check to see if access has been granted.
+              following URL, and clicking “Join This Group”. NOTE: Observer
+              should be accessible within 24 – 48 hours from the time of your
+              request. You will not be notified, so will need to periodically
+              check to see if access has been granted.
             </li>
             <li>
               Once you have been granted access to start using Observer, go to

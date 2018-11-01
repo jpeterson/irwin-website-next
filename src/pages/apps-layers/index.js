@@ -7,7 +7,6 @@ const AppsAndLayersPage = () => {
   return (
     <Layout>
       <div>
-        IRWIN has the following apps & layers:
         <h3>Apps</h3>
         <ul>
           <li>
@@ -20,10 +19,6 @@ const AppsAndLayersPage = () => {
         <h3>
           <Link to="/apps-layers/layers">Layers</Link>
         </h3>
-        <ul>
-          <li>Current Wildland Fires</li>
-          <li>Recently Updated Fires</li>
-        </ul>
       </div>
     </Layout>
   );

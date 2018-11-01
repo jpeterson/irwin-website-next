@@ -1,12 +1,18 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import { Container, Header, Icon } from 'semantic-ui-react';
 
 import Layout from '../../components/Layout';
 import Breadcrumb from '../../components/Breadcrumb';
+import PostsByTag from '../../components/PostsByTag';
 
 const headerIconColor = 'teal';
 
-const AdsPage = () => {
+const AdsPage = ({ data }) => {
+  const posts =
+    data.allMarkdownRemark &&
+    data.allMarkdownRemark.edges.map(edge => edge.node);
+
   return (
     <Layout>
       <Breadcrumb
@@ -55,8 +61,44 @@ const AdsPage = () => {
           further updates by entering this state.
         </p>
       </Container>
+
+      {/* Relevant articles */}
+
+      <div style={{ marginTop: '4rem' }}>
+        <hr />
+        <h4>See the latest ADS posts:</h4>
+        <PostsByTag tag="ADS" posts={posts} />
+      </div>
     </Layout>
   );
 };
+
+// Working example of a graphql query to pull out posts by tag... need
+// to figure out how to do this more dynamically (i.e. pass tag name to React
+// component PostsByTag and let it query)
+export const pageQuery = graphql`
+  query AdsPostsQuery {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: ASC }
+      filter: { frontmatter: { tags: { elemMatch: { tag: { in: ["ADS"] } } } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            path
+            date
+            author
+            tags {
+              tag
+            }
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`;
 
 export default AdsPage;

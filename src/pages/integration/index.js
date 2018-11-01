@@ -7,7 +7,6 @@ const IntegrationPage = () => {
   return (
     <Layout>
       <div>
-        IRWIN has the following integration services:
         <ul>
           <li>
             <Link to="/integration/incident-api">Incident API</Link>
@@ -15,8 +14,13 @@ const IntegrationPage = () => {
           <li>
             <Link to="/integration/resource-api">Resource API</Link>
           </li>
+          <li>
+            <Link to="/integration/ads">ADS</Link>
+          </li>
+          <li>
+            <Link to="/integration/environments">Environments</Link>
+          </li>
         </ul>
-        There's also the <Link to="/integration/ads">ADS...</Link>
       </div>
     </Layout>
   );
