@@ -47,7 +47,7 @@ const CommunityResourcesPage = ({ data }) => {
 
       <div style={{ marginTop: '4rem' }}>
         <hr />
-        <h4>See the latest Community Resource posts:</h4>
+        <h4>See the latest Community Resource announcements:</h4>
         <PostsByTag tag="Community Resource" posts={posts} />
       </div>
     </Layout>

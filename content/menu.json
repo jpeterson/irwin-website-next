@@ -59,8 +59,8 @@
       ]
     },
     {
-      "name": "Blog",
-      "path": "/blog"
+      "name": "Announcements",
+      "path": "announcements"
     },
     {
       "name": "About",

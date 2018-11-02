@@ -71,7 +71,7 @@ const ResourceApiPage = ({ data }) => {
 
       <div style={{ marginTop: '4rem' }}>
         <hr />
-        <h4>See the latest Resource API posts:</h4>
+        <h4>See the latest Resource API announcements:</h4>
         <PostsByTag tag="Resource API" posts={posts} />
       </div>
     </Layout>

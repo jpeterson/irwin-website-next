@@ -121,7 +121,7 @@ const ObserverPage = ({ data }) => {
 
       <div style={{ marginTop: '4rem' }}>
         <hr />
-        <h4>See the latest Observer posts:</h4>
+        <h4>See the latest Observer announcements:</h4>
         <PostsByTag tag="Observer" posts={posts} />
       </div>
     </Layout>
