@@ -3,9 +3,9 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 
-const BlogPage = ({ data }) => (
+const AnnouncementsPage = ({ data }) => (
   <Layout>
-    <h1>Latest Posts</h1>
+    <h1>Latest Announcements</h1>
     {data.allMarkdownRemark.edges.map(post => (
       <div key={post.node.id}>
         <h3>{post.node.frontmatter.title}</h3>
@@ -23,7 +23,7 @@ const BlogPage = ({ data }) => (
 );
 
 export const pageQuery = graphql`
-  query BlogIndexQuery {
+  query AnnouncementsIndexQuery {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
       edges {
         node {
@@ -41,4 +41,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default BlogPage;
+export default AnnouncementsPage;

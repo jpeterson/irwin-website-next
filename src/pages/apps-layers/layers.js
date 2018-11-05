@@ -106,7 +106,7 @@ const LayersPage = ({ data }) => {
 
       <div style={{ marginTop: '4rem' }}>
         <hr />
-        <h4>See the latest Layers posts:</h4>
+        <h4>See the latest Layers announcements:</h4>
         <PostsByTag tag="Layers" posts={posts} />
       </div>
     </Layout>

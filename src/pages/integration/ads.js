@@ -66,7 +66,7 @@ const AdsPage = ({ data }) => {
 
       <div style={{ marginTop: '4rem' }}>
         <hr />
-        <h4>See the latest ADS posts:</h4>
+        <h4>See the latest ADS announcements:</h4>
         <PostsByTag tag="ADS" posts={posts} />
       </div>
     </Layout>

@@ -109,7 +109,7 @@ const EnvironmentsPage = ({ data }) => {
 
       <div style={{ marginTop: '4rem' }}>
         <hr />
-        <h4>See the latest Environments posts:</h4>
+        <h4>See the latest Environments announcements:</h4>
         <PostsByTag tag="Environments" posts={posts} />
       </div>
     </Layout>
