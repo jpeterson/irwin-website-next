@@ -1,6 +1,7 @@
 .side-nav {
   flex: 0 0 270px;
   position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .side-nav > .ui.menu {

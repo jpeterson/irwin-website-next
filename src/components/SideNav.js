@@ -15,7 +15,6 @@ const SideNav = props => {
           to={subpage.path}
           activeClassName="active-side-nav"
           content={subpage.name}
-          small
         />
       );
     });

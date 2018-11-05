@@ -1,0 +1,14 @@
+.ui.header.linked-header {
+  margin: -4rem 0 0;
+  padding: calc(6rem - 0.14285714em) 0em 1rem;
+}
+
+.linked-header-icon {
+  margin-left: 15px;
+  display: inline-flex;
+  color: #aaa;
+}
+
+.linked-header-icon:hover {
+  color: royalblue;
+}

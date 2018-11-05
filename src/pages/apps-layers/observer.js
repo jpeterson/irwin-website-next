@@ -1,14 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Button, Container, Header, Icon } from 'semantic-ui-react';
+import { Button, Container } from 'semantic-ui-react';
 
 import Layout from '../../components/Layout';
 import PostsByTag from '../../components/PostsByTag';
 import SideNav from '../../components/SideNav';
+import LinkedHeader from '../../components/LinkedHeader';
 
 import { pages } from '../../../content/menu.json';
-
-const headerIconColor = 'violet';
 
 const ObserverPage = ({ data }) => {
   const posts =
@@ -35,11 +34,7 @@ const ObserverPage = ({ data }) => {
           </div>
 
           {/* About */}
-
-          <Header as="h1" icon textAlign="center">
-            <Icon name="info" color={headerIconColor} circular />
-            <Header.Content>About Observer</Header.Content>
-          </Header>
+          <LinkedHeader>About Observer</LinkedHeader>
           <p>
             Observer is a read-only web application designed for viewing data
             that is being shared through the IRWIN integration services. Access
@@ -55,10 +50,7 @@ const ObserverPage = ({ data }) => {
 
           <hr />
 
-          <Header as="h1" icon textAlign="center">
-            <Icon name="paperclip" color={headerIconColor} circular />
-            <Header.Content>Resources</Header.Content>
-          </Header>
+          <LinkedHeader>Resources</LinkedHeader>
 
           {/* User Guide */}
 
@@ -71,11 +63,7 @@ const ObserverPage = ({ data }) => {
           <hr />
 
           {/* How to request access */}
-
-          <Header as="h1" icon textAlign="center">
-            <Icon name="key" color={headerIconColor} circular />
-            <Header.Content>Accessing Observer</Header.Content>
-          </Header>
+          <LinkedHeader>Accessing Observer</LinkedHeader>
           <p>
             If you have never accessed Observer, here are the steps to get an
             account and access the app.
