@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Button, Container, Header, Icon } from 'semantic-ui-react';
+import { Button, Container, Header, Icon, Segment } from 'semantic-ui-react';
 
 import Layout from '../../components/Layout';
 import Breadcrumb from '../../components/Breadcrumb';

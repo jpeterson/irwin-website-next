@@ -6,7 +6,7 @@
     },
     {
       "name": "Apps & Layers",
-      "path": "/apps-layers",
+      "path": "/apps-layers/observer",
       "subpages": [
         {
           "name": "Observer",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Integration Services",
-      "path": "/integration",
+      "path": "/integration/incident-api",
       "subpages": [
         {
           "name": "Incident API",
@@ -46,7 +46,7 @@
     },
     {
       "name": "Community",
-      "path": "/community",
+      "path": "/community/teams",
       "subpages": [
         {
           "name": "Teams",

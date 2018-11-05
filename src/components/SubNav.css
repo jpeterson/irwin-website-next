@@ -1,0 +1,17 @@
+.sub-nav {
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 2rem;
+}
+
+.sub-nav .item {
+  font-family: 'Avenir Next', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 2px 20px;
+}
+
+.sub-nav .item.active-sub-nav {
+  font-weight: 600;
+  color: #666;
+}

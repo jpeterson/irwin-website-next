@@ -8,13 +8,17 @@
 }
 
 .ui.inverted.menu.site-nav-container a.item {
-  color: white;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 300;
   border-radius: 0;
   border-bottom: 4px solid transparent;
+  transition: all 175ms linear;
 }
 
 .ui.inverted.menu.site-nav-container a.item:hover {
+  color: rgba(255, 255, 255, 1);
   background: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
 .ui.inverted.menu.site-nav-container a.item.active-nav {
@@ -32,4 +36,8 @@
 
 .ui.menu .dropdown.item .menu.site-nav-sub-menu {
   border-radius: 0 !important;
+}
+
+.ui.simple.dropdown.site-nav-dropdown:hover > .menu {
+  margin-top: 4px !important;
 }

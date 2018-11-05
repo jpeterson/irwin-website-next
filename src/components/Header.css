@@ -1,13 +1,16 @@
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
-
   position: absolute;
   background: rgba(0, 0, 0, 0);
   width: 100%;
   z-index: 2;
+}
+
+.site-header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
 }
 
 .site-header-scrolled {

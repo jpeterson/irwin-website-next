@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import SiteNav from './SiteNav';
+import SubNav from './SubNav';
 
 import { Image } from 'semantic-ui-react';
 import logo from '../images/logo-white.svg';
@@ -35,10 +36,13 @@ class Header extends React.Component {
             : 'site-header'
         }
       >
-        <Link to="/" style={{ display: 'inline-block' }}>
-          <Image src={logo} title={siteTitle} />
-        </Link>
-        <SiteNav hasHero={hasHero} scrolled={scrolled} />
+        <div className="site-header-main">
+          <Link to="/" style={{ display: 'inline-block' }}>
+            <Image src={logo} title={siteTitle} />
+          </Link>
+          <SiteNav hasHero={hasHero} scrolled={scrolled} />
+        </div>
+        <SubNav hasHero={hasHero} scrolled={scrolled} />
       </div>
     );
   }
