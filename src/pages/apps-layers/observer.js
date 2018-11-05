@@ -1,10 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Button, Container, Header, Icon, Segment } from 'semantic-ui-react';
+import { Button, Container, Header, Icon } from 'semantic-ui-react';
 
 import Layout from '../../components/Layout';
-import Breadcrumb from '../../components/Breadcrumb';
 import PostsByTag from '../../components/PostsByTag';
+import SideNav from '../../components/SideNav';
+
+import { pages } from '../../../content/menu.json';
 
 const headerIconColor = 'violet';
 
@@ -15,107 +17,106 @@ const ObserverPage = ({ data }) => {
 
   return (
     <Layout>
-      <Breadcrumb
-        page="Observer"
-        parent={{ name: 'Apps & Layers', path: '/apps-layers' }}
-      />
-      <Container text textAlign="justified">
-        {/* Launch Application */}
+      <div className="content-sidenav-container">
+        <SideNav pages={pages[1].subpages[0].subpages} />
+        <Container text textAlign="justified">
+          {/* Launch Application */}
 
-        <div style={{ textAlign: 'center' }}>
-          <Button
-            color="green"
-            size="large"
-            as="a"
-            href="https://irwin.doi.gov/observer"
-            target="_blank"
-          >
-            Launch Observer
-          </Button>
-        </div>
+          <div style={{ textAlign: 'center' }}>
+            <Button
+              color="green"
+              size="large"
+              as="a"
+              href="https://irwin.doi.gov/observer"
+              target="_blank"
+            >
+              Launch Observer
+            </Button>
+          </div>
 
-        {/* About */}
+          {/* About */}
 
-        <Header as="h1" icon textAlign="center">
-          <Icon name="info" color={headerIconColor} circular />
-          <Header.Content>About Observer</Header.Content>
-        </Header>
-        <p>
-          Observer is a read-only web application designed for viewing data that
-          is being shared through the IRWIN integration services. Access to this
-          application is granted through the GeoPlatform ArcGIS Online
-          Organization.
-        </p>
-        <p>
-          Observer provides current and transactional views of incident and
-          resource data being shared by partners within the wildland fire
-          community. This data provides the location, size, conditions and many
-          other attributes that help classify fires.
-        </p>
+          <Header as="h1" icon textAlign="center">
+            <Icon name="info" color={headerIconColor} circular />
+            <Header.Content>About Observer</Header.Content>
+          </Header>
+          <p>
+            Observer is a read-only web application designed for viewing data
+            that is being shared through the IRWIN integration services. Access
+            to this application is granted through the GeoPlatform ArcGIS Online
+            Organization.
+          </p>
+          <p>
+            Observer provides current and transactional views of incident and
+            resource data being shared by partners within the wildland fire
+            community. This data provides the location, size, conditions and
+            many other attributes that help classify fires.
+          </p>
 
-        <hr />
+          <hr />
 
-        <Header as="h1" icon textAlign="center">
-          <Icon name="paperclip" color={headerIconColor} circular />
-          <Header.Content>Resources</Header.Content>
-        </Header>
+          <Header as="h1" icon textAlign="center">
+            <Icon name="paperclip" color={headerIconColor} circular />
+            <Header.Content>Resources</Header.Content>
+          </Header>
 
-        {/* User Guide */}
+          {/* User Guide */}
 
-        <p>User Guide</p>
+          <p>User Guide</p>
 
-        {/* Changelog */}
+          {/* Changelog */}
 
-        <p>Changelog</p>
+          <p>Changelog</p>
 
-        <hr />
+          <hr />
 
-        {/* How to request access */}
+          {/* How to request access */}
 
-        <Header as="h1" icon textAlign="center">
-          <Icon name="key" color={headerIconColor} circular />
-          <Header.Content>Accessing Observer</Header.Content>
-        </Header>
-        <p>
-          If you have never accessed Observer, here are the steps to get an
-          account and access the app.
-        </p>
-        <p>
-          <ol>
-            <li>
-              If you already have an ArcGIS account, and are a member of the
-              GeoPlatform organization, navigate to
-              https://geoplatform.maps.arcgis.com and sign in.
-            </li>
-            <li>
-              If you are not a member of the GeoPlatform organization or do not
-              have an account, email Kayloni Ah Tong
-              (kayloni_ahtong@ios.doi.gov) and request an account.
-            </li>
-            <li>
-              Once you have a GeoPlatform ArcGIS account, navigate to
-              https://geoplatform.maps.arcgis.com and sign in.
-            </li>
-            <li>When prompted, choose to sign in using ArcGIS.</li>
-            <li>
-              Request access to Observer by navigating to the group with the
-              following URL, and clicking “Join This Group”. NOTE: Observer
-              should be accessible within 24 – 48 hours from the time of your
-              request. You will not be notified, so will need to periodically
-              check to see if access has been granted.
-            </li>
-            <li>
-              Once you have been granted access to start using Observer, go to
-              https://irwin.doi.gov/observer and click on Login.
-            </li>
-            <li>
-              To allow Observer to access your ArcGIS Online account, select
-              "ArcGIS" at the prompt to “Sign in to GeoPlatform.gov Using”.
-            </li>
-            <li>Enter your ArcGIS credentials and click "Sign In”.</li>
-          </ol>
-        </p>
-      </Container>
+          <Header as="h1" icon textAlign="center">
+            <Icon name="key" color={headerIconColor} circular />
+            <Header.Content>Accessing Observer</Header.Content>
+          </Header>
+          <p>
+            If you have never accessed Observer, here are the steps to get an
+            account and access the app.
+          </p>
+          <p>
+            <ol>
+              <li>
+                If you already have an ArcGIS account, and are a member of the
+                GeoPlatform organization, navigate to
+                https://geoplatform.maps.arcgis.com and sign in.
+              </li>
+              <li>
+                If you are not a member of the GeoPlatform organization or do
+                not have an account, email Kayloni Ah Tong
+                (kayloni_ahtong@ios.doi.gov) and request an account.
+              </li>
+              <li>
+                Once you have a GeoPlatform ArcGIS account, navigate to
+                https://geoplatform.maps.arcgis.com and sign in.
+              </li>
+              <li>When prompted, choose to sign in using ArcGIS.</li>
+              <li>
+                Request access to Observer by navigating to the group with the
+                following URL, and clicking “Join This Group”. NOTE: Observer
+                should be accessible within 24 – 48 hours from the time of your
+                request. You will not be notified, so will need to periodically
+                check to see if access has been granted.
+              </li>
+              <li>
+                Once you have been granted access to start using Observer, go to
+                https://irwin.doi.gov/observer and click on Login.
+              </li>
+              <li>
+                To allow Observer to access your ArcGIS Online account, select
+                "ArcGIS" at the prompt to “Sign in to GeoPlatform.gov Using”.
+              </li>
+              <li>Enter your ArcGIS credentials and click "Sign In”.</li>
+            </ol>
+          </p>
+        </Container>
+      </div>
 
       {/* Relevant articles */}
 

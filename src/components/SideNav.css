@@ -1,0 +1,9 @@
+.side-nav {
+  flex: 0 0 270px;
+  position: relative;
+}
+
+.side-nav > .ui.menu {
+  position: fixed;
+  font-size: 0.85rem;
+}

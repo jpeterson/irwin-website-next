@@ -10,7 +10,21 @@
       "subpages": [
         {
           "name": "Observer",
-          "path": "/apps-layers/observer"
+          "path": "/apps-layers/observer",
+          "subpages": [
+            {
+              "name": "About",
+              "path": "/apps-layers/observer/about"
+            },
+            {
+              "name": "Resources",
+              "path": "/apps-layers/observer/resources"
+            },
+            {
+              "name": "Accessing Observer",
+              "path": "/apps-layers/observer/accessing-observer"
+            }
+          ]
         },
         {
           "name": "Lineup",
